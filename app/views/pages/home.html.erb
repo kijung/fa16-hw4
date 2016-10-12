@@ -1,6 +1,22 @@
-<h1>Welcome!</h1>
+<h1>Users</h1>
 
-<%= @users %>
-<%= @cats %>
-<%= @todos %>
+<%= 
+    @users.each {
+    	|x| print x
+    }
+%>
+<%= print "\n" %>
+
+<h1>Cats</h1>
+<%= 
+    @cats.each {
+    	|x| print x
+    }
+%>
+<h1>Todos</h1>
+<%= 
+    @todos.each {
+    	|x| print x
+    }
+%>
 
